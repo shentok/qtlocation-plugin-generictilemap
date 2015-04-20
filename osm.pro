@@ -1,9 +1,11 @@
+TEMPLATE = lib
+CONFIG += plugin
 TARGET = qtgeoservices_osm
 QT += location-private positioning-private network
 
 PLUGIN_TYPE = geoservices
 PLUGIN_CLASS_NAME = QGeoServiceProviderFactoryOsm
-load(qt_plugin)
+#load(qt_plugin)
 
 HEADERS += \
     qgeoserviceproviderpluginosm.h \
